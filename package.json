@@ -1,0 +1,30 @@
+{
+  "name": "imgcrud2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noplur/imgcrud2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noplur/imgcrud2/issues"
+  },
+  "homepage": "https://github.com/noplur/imgcrud2#readme",
+  "dependencies": {
+    "cloudinary": "^1.27.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
