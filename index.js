@@ -21,6 +21,11 @@ app.use(express.json());
 app.use(cors());
 
 // Route
-app.use("/user", require("./routes/user"));
 
-app.listen(5000, () => console.log("Server is running"));
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`API server now on port ${PORT}!`);
+});
+
+app.use("/user", require("./routes/user"));
