@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
 
-// Connect DB
+// Connect DB .
 mongoose
   .connect(process.env.MONGO_URI, {
     // useCreateIndex: true,
