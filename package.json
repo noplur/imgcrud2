@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index",
-    "start": "node index.js"
+    "heroku-postbuild": "npm run seed && cd client && npm run build"
   },
   "repository": {
     "type": "git",
