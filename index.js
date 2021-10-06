@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
 
-// Connect DB .
+// Connect DB
 mongoose
   .connect(process.env.MONGO_URI, {
     // useCreateIndex: true,
@@ -23,6 +23,4 @@ app.use(cors());
 // Route
 app.use("/user", require("./routes/user"));
 
-app.listen(process.env.PORT || 5000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+app.listen(5000, () => console.log("Server is running"));
