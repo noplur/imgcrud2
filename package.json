@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "install": "npm i && cd ../client && npm i"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev"
   },
   "repository": {
     "type": "git",
