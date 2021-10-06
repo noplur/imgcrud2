@@ -1,6 +1,4 @@
 const express = require("express");
-
-const PORT = process.env.PORT || 5000;
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
@@ -24,7 +22,3 @@ app.use(cors());
 
 // Route
 app.use("/user", require("./routes/user"));
-
-app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
-});
