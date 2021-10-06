@@ -23,4 +23,6 @@ app.use(cors());
 // Route
 app.use("/user", require("./routes/user"));
 
-app.listen(5000, () => console.log("Server is running"));
+app.listen(process.env.PORT || 5000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
