@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index"
+    "server": "nodemon index",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "npm run server",
+    "start:dev": "concurrently \"npm run server\" \"cd client && npm start\""
   },
   "repository": {
     "type": "git",
@@ -19,9 +22,11 @@
   "homepage": "https://github.com/noplur/imgcrud2#readme",
   "dependencies": {
     "cloudinary": "^1.27.0",
+    "concurrently": "^6.3.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongoose": "^6.0.8",
     "multer": "^1.4.3"
   },
