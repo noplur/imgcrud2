@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev"
+    "server": "nodemon index"
   },
   "repository": {
     "type": "git",
