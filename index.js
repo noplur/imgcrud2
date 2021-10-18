@@ -2,16 +2,15 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const cors = require("cors");
-
 dotenv.config();
+const cors = require("cors");
 
 // Connect DB
 mongoose
   .connect(process.env.MONGO_URI, {
-    useCreateIndex: true,
+    // useCreateIndex: true,
     useNewUrlParser: true,
-    useFindAndModify: false,
+    // useFindAndModify: false,
     useUnifiedTopology: true,
   })
   .then(() => console.log("mongoDB is connected"))
