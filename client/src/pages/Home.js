@@ -26,7 +26,6 @@ const Home = () => {
       console.log(error);
     }
   };
-  
   return (
     <div className="row">
       {users?.map((user) => (
